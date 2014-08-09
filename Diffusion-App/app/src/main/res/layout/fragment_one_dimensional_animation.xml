@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animation_fragment"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:screenOrientation="landscape"
+    android:orientation="horizontal"
+    android:layout_marginLeft="0dp"
+    tools:context="com.example.diffusion.app.FreeFormBinaryDiffusion.FreeFormBinaryAnimationFragment">
+
+
+        <com.example.diffusion.app.FreeFormBinaryDiffusion.AnimationView
+            android:id="@+id/animation_view"
+            android:layout_height="403dp"
+            android:layout_width="750dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFFFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/animation_seekbar_layout"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:layout_width="250dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/animation_temperature_seek_bar"
+                android:progress="50"
+                android:max="100"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/animation_play_button_layout">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/animation_boundary_condition_layout"
+            >
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/boundary_condition_radio_group">
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Constant Value"
+                    android:checked="true"
+                    android:id="@+id/radio_boundary_constant"
+                    />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zero Flux"
+                    android:id="@+id/radio_boundary_zero"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Periodic"
+                    android:id="@+id/radio_boundary_periodic"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+ </LinearLayout>

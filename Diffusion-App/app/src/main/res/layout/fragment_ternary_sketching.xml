@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ternary_sketching_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:screenOrientation="landscape"
+    tools:context="com.example.diffusion.app.FreeFormTernaryDiffusion.TernarySketchingFragment">
+
+    <com.example.diffusion.app.FreeFormTernaryDiffusion.TernaryFreeFormSketchingView
+        android:id="@+id/ternary_sketching_view"
+        android:layout_width="950dp"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:background="#FFFFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/refresh_all_btn"
+            android:text="Refresh All"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/refresh_blue_btn"
+            android:text="Refresh Blue"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/refresh_red_btn"
+            android:text="Refresh Red"
+            android:textAlignment="center"/>
+
+        
+        <RadioGroup
+            android:id="@+id/ternary_sketching_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_button_blue"
+                android:text="Blue"
+                android:layout_width="125dp"
+                android:layout_height="100dp" />
+
+
+            <RadioButton
+                android:id="@+id/radio_button_red"
+                android:text="Red"
+                android:layout_width="125dp"
+                android:layout_height="100dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/ternary_sketching_animate_values"
+            android:text="Animate"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

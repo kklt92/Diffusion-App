@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/action_restart_animation"
+          android:title="Restart"
+          android:showAsAction="always"
+          android:icon="@drawable/refresh_button"
+          />
+
+    <item android:id="@+id/action_save_data"
+          android:title="Save Data"
+          android:icon="@drawable/save"
+          android:showAsAction="always"
+          />
+
+    <item android:title="Create Gif"
+          android:id="@+id/action_create_gif"
+          android:icon="@drawable/gif_button"
+          android:showAsAction="ifRoom"
+          />
+
+    <item android:title="Snap Shot"
+          android:id="@+id/action_snapshot"
+          android:icon="@drawable/snapshot_button"
+          android:showAsAction="ifRoom"
+          />
+
+    <item android:id="@+id/action_change_deltaT"
+          android:title="Delta T Factor"
+          android:icon="@drawable/deltat_button"
+          android:showAsAction="ifRoom"
+          />
+
+    <item android:id="@+id/action_switch_to_lines"
+          android:title="Switch Lines/Dots"
+          android:showAsAction="ifRoom"
+          />
+
+</menu>

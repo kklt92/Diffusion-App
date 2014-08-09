@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.diffusion.app.FreeFormTernaryDiffusion.TernaryFreeFormAnimationFragment">
+
+
+    <com.example.diffusion.app.FreeFormTernaryDiffusion.TernaryAnimationView
+        android:layout_width="403dp"
+        android:layout_height="703dp"
+        android:id="@+id/ternary_animation_view"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFFFF"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ternary_animation_play"
+            android:text="Play"
+        />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ternary_animation_restart"
+            android:text="Restart"
+        />
+
+
+    </LinearLayout>
+
+</LinearLayout>
